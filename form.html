@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Форма для участия в конкурсе</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__title">Pink - приложение для создания жизнерадостных фотографий!</h1>
+    <div class="page-header__top">
+      <nav class="main-nav">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="" title="Логотип сайта">
+            <img class="page-header__logo-img" src="" alt="Логотип сайта">
+          </a>
+        </div>
+        <button class="main-nav__tigger">
+          <span></span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav_item">
+            <a class="main-nav_item-link" href="#" title="Главная">Главная</a>
+          </li>
+          <li class="main-nav_item">
+            <a class="main-nav_item-link" href="#" title="Фотографии">Фотографии</a>
+          </li>
+          <li class="main-nav_item">
+            <a class="main-nav_item-link" href="#" title="Конкурс">Конкурс</a>
+          </li>
+          <li class="main-nav_item">
+            <a class="main-nav_item-link" href="https://htmlacademy.ru/" title="Html Academy">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-header__bottom">
+      <div class="page-header__inner">
+        <h2 class="page-header__headline">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <p class="main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <form class="competition-form" action="">
+      <div class="competition-form__name">
+        <div class="competition-form__inner">
+          <div class="competition-form__last-name">
+            <label for="last-name">Фамилия:</label>
+            <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" autocomplete="on" autofocus required>
+          </div>
+          <div class="competition-form__first-name">
+            <label for="first-name">Имя:</label>
+            <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" autocomplete="on" required>
+          </div>
+          <div class="competition-form__patronymic">
+            <label for="patronymic">Отчество:</label>
+            <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" autocomplete="on">
+          </div>
+        </div>
+      </div>
+      <div class="competition-form__progresses">
+        <div class="competition-form__inner">
+          <fieldset class="competition-form__fieldset">
+            <legend class="competition-form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="competition-form__progresses-item">
+              <label>
+                <input type="checkbox" checked>Сделал селфи с акулой
+              </label>
+              <label>
+                <input type="checkbox" checked>Обгорел на пляже
+              </label>
+              <label>
+                <input type="checkbox">Видел Чака Норриса
+              </label>
+              <label>
+                <input type="checkbox">Накупил сувениров
+              </label>
+              <label>
+                <input type="checkbox" checked>Удержал башню
+              </label>
+              <label>
+                <input type="checkbox">Разгромил отель
+              </label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="competition-form__contacts">
+        <div class="competition-form__inner">
+          <fieldset class="competition-form__fieldset">
+            <legend class="competition-form__legend">Контактная информация</legend>
+            <div class="competition-form__contacts-items">
+              <div class="competition-form__phone">
+                <label for="tel">Номер телефона</label>
+                <input id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="competition-form__email">
+                <label for="email">Адрес почты</label>
+                <input id="email" type="email" name="email" placeholder="Введите почту*" required>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="competition-form__apps">
+        <div class="competition-form__inner">
+          <fieldset class="competition-form__fieldset">
+            <legend class="competition-form__legend">С какими приложениями путешествовали?</legend>
+            <div class="competition-form__apps-items">
+              <div class="competition-form__ios">
+                <input id="ios" type="radio" name="apps" checked>
+                <label for="ios">Pink для iOS</label>
+              </div>
+              <div class="competition-form__android">
+                <input id="android" type="radio" name="apps">
+                <label for="android">Pink для Android</label>
+              </div>
+              <div class="competition-form__windows-phone">
+                <input id="windows-phone" type="radio" name="apps">
+                <label for="windows-phone">Windows Phone</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="competition-form__emotions">
+        <fieldset class="competition-form__fieldset">
+          <legend class="competition-form__legend">Опишите свои эмоции</legend>
+          <textarea class="competition-form__text-emotion" name="text-emotion" placeholder="Можно прям в красках, не стесняясь в выржениях"></textarea>
+        </fieldset>
+      </div>
+      <input class="btn" type="submit" value="Отправить форму">
+      <p class="competition-form__footnote">* - Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <a class="page-footer__logo" href="#"></a>
+      <div class="page-footer__social">
+        <ul class="social-links">
+          <li>
+            <a class="social-link  social-link--inst" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li>
+            <a class="social-link  social-link--fb" href="https://www.facebook.com">Facebook</a>
+          </li>
+          <li>
+            <a class="social-link  social-link--youtube" href="https://www.youtube.com">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="development">
+        <p class="development__label">Разработано</p>
+        <a class="development__logo" href="https://htmlacademy.ru/"></a>
+      </div>
+    </div>
+  </footer>
+  <div class="success-popup">
+    <p class="success-popup__title">Ваша заявка отправлена</p>
+    <p class="success-popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <div class="success-popup__btn">
+      <button class="btn">Закрыть окно</button>
+    </div>
+  </div>
+  <div class="failure-popup">
+    <p class="failure-popup__title">Что-то пошло не так!</p>
+    <p class="failure-popup__messege">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="btn">Ok</button>
+  </div>
+</body>
+
+</html>
