@@ -1,0 +1,112 @@
+.main-nav {
+  background-color: @bg-color-darkest;
+}
+.main-nav--closed {
+  background-color: rgba(40, 54, 69, 0.7);
+}
+.main-nav--closed .main-nav__logo {
+  border-bottom: none;
+}
+.main-nav--closed .main-nav__trigger-axis {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+    }
+}
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+.main-nav--opened .main-nav__trigger {
+  width: 24px;
+  height: 23px;
+}
+.main-nav--opened .main-nav__trigger-axis {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  height: 4px;
+  background: 0 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+      transform: rotate3d(0,0,1,45deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+      transform: rotate3d(0,0,1,-45deg);
+    }
+}
+.main-nav__logo {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  border-bottom: 1px solid @border-color-darkest;
+}
+.main-nav__trigger {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.main-nav--closed .main-nav__trigger:hover .main-nav__trigger-axis,
+.main-nav__trigger:hover .main-nav__trigger-axis::before,
+.main-nav__trigger:hover .main-nav__trigger-axis::after {
+  background-color: @bg-color-bright;
+}
+.main-nav--closed .main-nav__trigger:active .main-nav__trigger-axis,
+.main-nav__trigger:active .main-nav__trigger-axis::before,
+.main-nav__trigger:active .main-nav__trigger-axis::after {
+  opacity: 0.3;
+}
+.main-nav_item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  border-top: 1px solid @border-color-grey;
+  border-bottom: 1px solid @border-color-darkest;
+}
+.main-nav_item-link {
+  .font(18px, 32px, @txt-color-lightest, bold);
+  text-transform: uppercase;
+}

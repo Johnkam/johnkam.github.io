@@ -1,0 +1,79 @@
+.page-header__title {
+  .text-hidden();
+}
+.page-header__top {
+  position: relative;
+   z-index: 2;
+}
+.page-header__bottom {
+  margin-top: -70px;
+  z-index: 1;
+  background:
+    url("../img/iphone-hand-mobile@1x.png") no-repeat 0 176px,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  @media @retina {
+    background:
+      url("../img/iphone-hand-mobile@2x.png") no-repeat,
+      url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-size: 258px 286px, 700px 462px;
+  }
+  background-color: @bg-color-darken;
+}
+.page-header__inner {
+  .container();
+}
+.page-header__downloading {
+  padding-top: 490px;
+}
+
+.page-header__slogan {
+  display: none;
+}
+.page-header__btn {
+  margin: 0 auto;
+}
+.page-header__downloading-icons {
+  display: flex;
+  padding-left: 37px;
+  padding-right: 37px;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__apple-icon span,
+.page-header__android-icon span,
+.page-header__windows-icon span {
+  .text-hidden();
+}
+.page-header__apple-icon {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+.page-header__android-icon {
+  display: block;
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+}
+.page-header__windows-icon {
+  display: block;
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+}
+.page-header__downloading-info {
+  .font(14px, 24px, @txt-color-lightest, lighter);
+  text-align: center;
+}
+
+@media @tablet-widths {
+  .page-header__slogan {
+    display: block;
+    .font(40px, 40px, @txt-color-lightest, light)
+  }
+}
+

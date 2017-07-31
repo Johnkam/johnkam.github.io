@@ -1,0 +1,32 @@
+//Container for center position
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
+//Font
+.font(@size, @line-height, @color, @font-weight) {
+  font-size: @size;
+  line-height: @line-height;
+  color: @color;
+  font-weight: @font-weight;
+}
+//Text-hidden
+.text-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
