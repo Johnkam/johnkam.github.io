@@ -5,7 +5,6 @@
 *.pdf
 *.psd
 *.sublime*
-
 node_modules/
 Thumbs.db
 170315_pink_master/
