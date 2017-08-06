@@ -444,6 +444,9 @@ h2,
 h3 {
   margin: 0;
 }
+blockquote {
+  margin: 0;
+}
 .btn {
   display: block;
   width: 203px;
@@ -539,6 +542,15 @@ h3 {
   color: #283645;
   font-weight: lighter;
   text-align: center;
+}
+.main__features {
+  margin-bottom: 50px;
+}
+.main__reviews-slider {
+  margin-bottom: 80px;
+}
+.main-feature {
+  display: none;
 }
 .main-nav {
   background-color: #283645;
@@ -768,4 +780,91 @@ h3 {
     color: #ffffff;
     font-weight: light;
   }
+}
+.reviews-slider__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.reviews-slider__inner {
+  width: 280px;
+  margin: 0 auto;
+}
+.reviews-slider_slide-list {
+  position: relative;
+  width: inherit;
+  height: 270px;
+  text-align: center;
+}
+.reviews-slider__switch {
+  display: none;
+}
+.reviews-slider__control {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin-right: 19px;
+  background-color: #283645;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: background 0.8s ease-out 0s;
+  top: 100%;
+}
+.reviews-slider__control:hover {
+  opacity: 0.6;
+}
+.reviews-slider__control:active {
+  opacity: 0.1;
+}
+.reviews-slider__switch:checked + .reviews-slider__control {
+  background-color: #ffffff;
+  border: 3px solid #283645;
+}
+.reviews-slider__slide {
+  overflow: auto;
+  height: inherit;
+  margin: 0;
+}
+.reviews-slider_slide-list > .reviews-slider__slide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.reviews-slider__switch:checked + .reviews-slider__control + .reviews-slider__slide {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+.reviews-slider__author {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+.reviews-slider__text {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: normal;
 }
